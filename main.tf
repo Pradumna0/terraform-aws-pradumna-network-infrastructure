@@ -132,3 +132,8 @@ resource "aws_cloudfront_distribution" "pradumna_task_01_distribution" {
   }
 }
 
+output "cloudfront_url" {
+  description = "We can access the website using this URL"
+  value       = aws_cloudfront_distribution.pradumna_task_01_distribution.domain_name
+}
+
