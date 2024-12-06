@@ -154,12 +154,12 @@ provider "aws" {
 module "pradumna-network-infrastructure" {
   source  = "Pradumna0/pradumna-network-infrastructure/aws"
   version = "1.1.0"
-  cidr_block           = "10.0.0.0/16"
-  public_subnet_cidrs  = ["10.0.1.0/24", "10.0.2.0/24"]
-  private_subnet_cidrs = ["10.0.3.0/24", "10.0.4.0/24"]
+  cidr_block           = "Use your cidr"
+  public_subnet_cidrs  = ["Use your public subnets"]
+  private_subnet_cidrs = ["Use your private subnets according to your requirements"]
   availability_zones   = ["ap-south-1a", "ap-south-1b"]
   instance_type        = "t2.micro"
-  ami_id               = "ami-0614680123427b75e" #You can Replace with your actual ami_id
-  launch_template_name = "pradumna-template"
+  ami_id               = "ami-123" #You can Replace with your actual ami_id
+  launch_template_name = "xyz-template"
 }
 ```
